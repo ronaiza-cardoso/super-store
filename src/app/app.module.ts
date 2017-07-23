@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RoutingModule } from './app.router'
 import { NgModule } from '@angular/core';
 
+import { PeopleService } from './providers/people.service';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { MenuComponent } from './componentes/menu/menu.component';
@@ -16,6 +18,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { Erro404PageComponent } from './pages/erro-404-page/erro-404-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { PeopleListComponent } from './pages/people-list/people-list.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +37,14 @@ import { Erro404PageComponent } from './pages/erro-404-page/erro-404-page.compon
     ProductPageComponent,
     ProductsPageComponent,
     Erro404PageComponent,
+    AboutPageComponent,
+    PeopleListComponent,
   ],
   imports: [
     BrowserModule,
     RoutingModule
   ],
-  providers: [],
+  providers: [PeopleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
