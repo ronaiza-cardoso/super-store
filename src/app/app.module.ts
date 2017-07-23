@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { RoutingModule } from './app.router'
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -34,7 +35,8 @@ import { Erro404PageComponent } from './pages/erro-404-page/erro-404-page.compon
     Erro404PageComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
