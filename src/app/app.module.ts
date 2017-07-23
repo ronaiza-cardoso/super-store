@@ -1,3 +1,4 @@
+import { MenuService } from './providers/menu.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { RoutingModule } from './app.router'
 import { NgModule } from '@angular/core';
@@ -44,7 +45,7 @@ import { PeopleListComponent } from './pages/people-list/people-list.component';
     BrowserModule,
     RoutingModule
   ],
-  providers: [PeopleService],
+  providers: [PeopleService, MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
